@@ -1,2 +1,3 @@
-# perso-site
-stuff for my personal website :p
+# code for my personal website!
+
+> [!important] all rights reserved.
