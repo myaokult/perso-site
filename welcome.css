@@ -1,0 +1,69 @@
+body {
+  background-image: url('assets/welcome-wallpaper.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #406039;
+}
+
+::selection {
+  background-color: #a5cb7fc7; /* change highlight color */
+  color: #52754a; /* change text color */
+}
+
+.switch-lite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.switch-lite img {
+  display: block;
+  height: 450px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 38.5%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.title p {
+  margin: 3em 0 0.2em 0;
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.2em;
+}
+
+.title h1 {
+  margin: 0 0 0.5em 0;
+  font-family: 'Shantell Sans', sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  line-height: 1.05em;
+}
+
+.switch-lite > p {
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.2em;
+  position: absolute;
+  top: 69.5%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden-link {
+  position: absolute;
+  top: 28%;
+  left: 91.5%;
+  width: 4.5%;
+  height: 9.5%;
+  z-index: 10;
+  cursor: pointer;
+}

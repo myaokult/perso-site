@@ -1,0 +1,13 @@
+/* --- FONTS --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* --- STYLING --- */
+
+body {
+  background-image: url('assets/base-wallpaper2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
