@@ -1,15 +1,21 @@
 body {
   background-image: url('assets/welcome-wallpaper.png');
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #406039;
+  color: #52754a;
+  height: 100vh;
 }
 
 ::selection {
-  background-color: #a5cb7fc7; /* change highlight color */
-  color: #52754a; /* change text color */
+  background-color: #c7eb94c7; /* change highlight color */
+  color: #406039; /* change text color */
+  /* background-color: #7edcc0c7;
+  color: #41806d;
+  background-color: #eec0c0c7;
+  color: #a66a6a; */
 }
 
 .switch-lite {
@@ -39,6 +45,7 @@ body {
   margin: 3em 0 0.2em 0;
   font-family: 'Figtree', sans-serif;
   font-size: 1.2em;
+  font-weight: 500;
 }
 
 .title h1 {
@@ -56,6 +63,7 @@ body {
   top: 69.5%;
   left: 54%;
   transform: translate(-50%, -50%);
+  font-weight: 500;
 }
 
 .hidden-link {
@@ -66,4 +74,38 @@ body {
   height: 9.5%;
   z-index: 10;
   cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.hidden-link:hover {
+  background-color: rgba(237, 141, 141, 0.534);
+}
+
+.hidden-link:focus,
+.hidden-link:active { 
+  transition: none;
+}
+
+.hidden-link[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 100%;
+  left: 95%;
+  background-color: #cec2ae;
+  color: #7b6c51;
+  padding: 6px 10px;
+  border: 2px solid #7b6c51;
+  border-radius: 4px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hidden-link[data-title]:hover::after {
+  opacity: 1;
 }
