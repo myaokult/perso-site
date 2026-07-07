@@ -1,0 +1,26 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5e7b8;
+  border: 3px solid #7b6c51;
+  border-radius: 15px;
+  padding: 2em;
+}
+
+.not-found h1 {
+  font-family: 'JetBrainsMono', monospace;
+  font-size: 3em;
+  margin: 0 0 0.05em 0;
+}
+
+.not-found h4 {
+  font-family: 'JetBrainsMono', monospace;
+  font-size: 0.8em;
+  margin: 0.2em 0 2em 0;
+}
+
+.not-found p {
+  margin: 0em 0 0.5em 0;
+}

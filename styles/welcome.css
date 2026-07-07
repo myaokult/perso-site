@@ -1,0 +1,109 @@
+body {
+  background-image: url('../assets/welcome-wallpaper.png');
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-lite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.switch-lite img {
+  display: block;
+  height: 450px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+}
+
+.title p {
+  margin: 3.5em 0 0.2em 0; /* top right bottom left */
+}
+
+.title h1 {
+  margin: 0 0 0.5em 0;
+  font-family: 'Shantell Sans', sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  line-height: 1.05em;
+}
+
+.switch-lite > p {
+  position: absolute;
+  top: 69.5%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  animation: fadeInOut 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden-link {
+  position: absolute;
+  top: 28%;
+  left: 91.5%;
+  width: 4.5%;
+  height: 9.5%;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.hidden-link:hover {
+  background-color: #ed8d8d88;
+}
+
+.hidden-link:focus,
+.hidden-link:active { 
+  transition: none;
+}
+
+.hidden-link[data-title]::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 100%;
+  left: 95%;
+  background-color: #cec2ae;
+  color: #7b6c51;
+  padding: 6px 10px;
+  border: 2px solid #7b6c51;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hidden-link[data-title]:hover::after {
+  opacity: 1;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.7em;
+}
